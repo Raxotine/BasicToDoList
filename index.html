@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+<h2>To do list</h2>
+
+<p ng-repeat="x in names" ng-class="{done: tasks[$index]}">{{x}}<span ng-click="delete($index)" class="delete" >x</span><input id="box" type="checkbox" ng-model="tasks[$index]" value="{{tasks[$index]}}"></p>
+
+<input placeholder="{{firstvar}}" ng-model="newTask"></input><p id="addtask" ng-click="adding()">Add</p>
+<p id="error">{{errortext}}</p>
+</div>
+
+<script src="myApp.js"></script>
+<script src="myCtrl.js"></script>
+
+</body>
+</html>

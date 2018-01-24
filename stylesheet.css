@@ -1,0 +1,73 @@
+div {
+	background-color: lightgray;
+	padding: 50px;
+	width: 300px;
+	color: black;
+}
+
+.undone {
+
+}
+
+.done {
+	background-color: lightgreen;
+}
+
+p {
+	background-color: lightblue;
+	color: white;
+	padding: 10px;
+	font-family: sans-serif;
+}
+
+li {
+	background-color: lightblue;
+	color: white;
+	padding: 10px;
+	font-family: sans-serif;
+}
+
+h2 {
+	color: white;
+	font-family: sans-serif;
+}
+
+input {
+	width: 246px;
+}
+
+#box {
+	float: right;
+	width: 10px;
+}
+
+#addtask {
+	padding: 2px;
+	padding-left: 7px;
+	background-color: lightblue;
+	display: inline-block;
+	width:40px;
+	color: white;
+	font-family: sans-serif;
+	position: relative;
+	top: 1px;
+}
+
+#addtask:hover {
+	background-color: lightgreen;
+}
+
+#error {
+	color: red;
+	background-color: lightgray;
+}
+
+.delete {
+	color: red;
+	font-family: sans-serif;
+	float: right;
+	position: relative;
+	right: 40px;
+	top: -1px;
+	cursor: pointer;
+}
