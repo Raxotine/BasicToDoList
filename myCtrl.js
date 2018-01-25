@@ -17,6 +17,7 @@ app.controller('myCtrl', function($scope) {
 	}
 	$scope.delete = function (x) {
 		$scope.names.splice(x, 1);
+		$scope.tasks.splice(x, 1);
 	}
 
 });
